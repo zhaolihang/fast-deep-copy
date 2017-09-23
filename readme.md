@@ -1,7 +1,7 @@
 #   fast-deep-copy 
     Only 20 lines code! no deps!
 
-useage:
+##  Useage:
 ```
     npm install -S fast-deep-copy
 ```
