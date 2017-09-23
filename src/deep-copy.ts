@@ -7,7 +7,7 @@
  * @return {*}
  */
 function find(list, f) {
-    return list.filter(f)[0]
+    return list.filter(f)[0];
 }
 
 /**
@@ -22,26 +22,23 @@ function find(list, f) {
 export function deepCopy<T>(obj: T, cache = []): T {
     // just return if obj is immutable value
     if (obj === null || typeof obj !== 'object') {
-        return obj
+        return obj;
     }
 
     // if obj is hit, it is in circular structure
-    const hit = find(cache, c => c.original === obj)
+    const hit = find(cache, c => c.original === obj);
     if (hit) {
-        return hit.copy
+        return hit.copy;
     }
 
-    const copy = Array.isArray(obj) ? [] : {}
+    const copy = Array.isArray(obj) ? [] : {};
     // put the copy into cache at first
     // because we want to refer it in recursive deepCopy
-    cache.push({
-        original: obj,
-        copy
-    })
+    cache.push({ original: obj, copy });
 
     Object.keys(obj).forEach(key => {
-        copy[key] = deepCopy(obj[key], cache)
-    })
+        copy[key] = deepCopy(obj[key], cache);
+    });
 
     return <T>copy;
 }

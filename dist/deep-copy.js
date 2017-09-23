@@ -34,10 +34,7 @@ function deepCopy(obj, cache) {
     var copy = Array.isArray(obj) ? [] : {};
     // put the copy into cache at first
     // because we want to refer it in recursive deepCopy
-    cache.push({
-        original: obj,
-        copy: copy
-    });
+    cache.push({ original: obj, copy: copy });
     Object.keys(obj).forEach(function (key) {
         copy[key] = deepCopy(obj[key], cache);
     });

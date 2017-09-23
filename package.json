@@ -1,11 +1,21 @@
 {
   "name": "fast-deep-copy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "20 lines code! Deep copy the given object considering circular structure",
+  "main": "dist/deep-copy.js",
+  "keywords": [
+    "fast-deep-copy",
+    "deep-copy",
+    "deepcopy"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node dist/test.js"
   },
-  "author": "",
+  "author": "625335512@qq.com",
+  "homepage": "https://github.com/zhaolihang/fast-deep-copy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaolihang/fast-deep-copy.git"
+  },
   "license": "ISC"
 }
