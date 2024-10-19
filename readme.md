@@ -1,5 +1,6 @@
 #   fast-deep-copy 
     Only 20 lines code! no deps!
+    It can correctly handle circular references!
 
 ##  Useage:
 ```

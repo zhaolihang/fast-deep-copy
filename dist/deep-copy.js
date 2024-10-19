@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.deepCopy = void 0;
 /** from  https://github.com/vuejs/vuex/blob/dev/src/util.js
  * Get the first item that pass the test
  * by second argument function
@@ -41,4 +42,3 @@ function deepCopy(obj, cache) {
     return copy;
 }
 exports.deepCopy = deepCopy;
-//# sourceMappingURL=deep-copy.js.map

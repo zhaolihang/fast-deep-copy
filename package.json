@@ -1,15 +1,18 @@
 {
   "name": "fast-deep-copy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "20 lines code! Deep copy the given object considering circular structure",
   "main": "dist/deep-copy.js",
+  "types": "dist/deep-copy.d.ts",
   "keywords": [
     "fast-deep-copy",
     "deep-copy",
     "deepcopy"
   ],
   "scripts": {
-    "test": "node dist/test.js"
+    "test": "node dist/test.js",
+    "build": "tsc",
+    "desc": "tsc --project ./tsconfig.desc.json"
   },
   "author": "625335512@qq.com",
   "homepage": "https://github.com/zhaolihang/fast-deep-copy",

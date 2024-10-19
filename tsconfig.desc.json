@@ -4,6 +4,7 @@
         "module": "commonjs",
         "target": "es5",
         "sourceMap": false,
+        "declaration": true,
         "allowJs": true,
         "moduleResolution": "node",
         "outDir": "dist"
